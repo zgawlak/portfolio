@@ -58,7 +58,7 @@ function App() {
             <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-5 lg:gap-24">
               <div className="text-center md:text-left md:max-w-xl p-5">
                 <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
-                <p className="text-lg md:text-xl p-5 md:px-0 md:py-5">Hi! My name is <strong>Zoë Gawlak</strong>. I'm a software engineering student with a passion for web development.</p>
+                <p className="text-lg md:text-xl p-5 md:px-0 md:py-5">Hi! I'm <strong>Zoë Gawlak</strong>. I'm a software engineering student with a passion for web development.</p>
                 <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-center md:gap-x-5 mt-5">
                   <p className="font-semibold basis-full md:basis-auto underline md:no-underline decoration-2 underline-offset-2">Tech Stack</p>
                   <ul className="flex gap-5 md:gap-x-7 pt-5 md:pt-0 items-center flex-wrap justify-center md:justify-start">
@@ -153,20 +153,21 @@ function App() {
           </div>
         </div>
 
-        <div id="contact" className="w-full py-24 px-5">
-          <h2 className="text-2xl md:text-4xl font-bold text-center">Contact</h2>
-          <p className="text-lg md:text-xl p-5 text-center mb-5">Feel free to get in touch!</p>
-          <div className="flex justify-center items-center gap-16">
-            <div className="flex items-center gap-3 text-xl">
-              <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                <i class="fa-solid fa-map-location-dot fa-xl"></i>
+        <div id="contact" className="w-full py-24 px-5 flex flex-col items-center bg-gray-50">
+          <h2 className="text-2xl md:text-4xl font-bold">Contact</h2>
+          <p className="text-lg md:text-xl p-3 mb-5">Feel free to get in touch!</p>
+
+          <div className="flex md:justify-center items-center gap-5 md:gap-16 flex-wrap">
+            <div className="flex items-center gap-3 text-lg md:text-xl">
+              <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full shadow-md">
+                <i class="fa-solid fa-map-location-dot fa-lg"></i>
               </div>
               <p>Scarborough, ON</p>
             </div>
             <div>
-              <div className="flex items-center gap-3 text-xl">
-                <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                  <i class="fa-solid fa-envelope fa-xl"></i>
+              <div className="flex items-center gap-3 text-lg md:text-xl">
+                <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full shadow-md">
+                  <i class="fa-solid fa-envelope fa-lg"></i>
                 </div>
                 <p>zoegawlak@gmail.com</p>
               </div>
