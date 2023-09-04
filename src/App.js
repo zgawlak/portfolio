@@ -46,28 +46,28 @@ function App() {
           <div id="about" className="text-primary w-full flex flex-col h-auto md:h-screen justify-center">
             <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-5 lg:gap-24">
               <div className="text-center md:text-left md:max-w-xl p-5">
-                <h2 className="text-3xl md:text-5xl font-bold">Zoë Gawlak</h2>
-                <p className="text-lg md:text-xl p-5 md:px-0 md:py-5">Hi! I'm a software engineering student with an interest in web development.</p>
-                <ul className="flex gap-5 md:gap-x-7 items-center flex-wrap justify-center mt-5">
-                  <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                    <img className="w-8" src={HTML5} alt="HTML5" title="HTML5" />
-                  </li>
-                  <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                    <img className="w-8" src={CSS3} alt="CSS3" title="CSS3" />
-                  </li>
-                  <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                    <img className="w-8" src={JavaScript} alt="JavaScript" title="JavaScript" />
-                  </li>
-                  <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                    <img className="w-8" src={Csharp} alt="C#" title="C#" />
-                  </li>
-                  <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                    <img className="w-8" src={ReactIcon} alt="React" title="React" />
-                  </li>
-                  <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
-                    <img className="w-8" src={Tailwind} alt="Tailwind" title="Tailwind" />
-                  </li>
-                </ul>
+                <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
+                <p className="text-lg md:text-xl p-5 md:px-0 md:py-5">Hi! My name is <strong>Zoë Gawlak</strong>. I'm a software engineering student with a passion for web development.</p>
+                <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-center md:gap-x-5 mt-5">
+                  <p className="font-semibold basis-full md:basis-auto underline md:no-underline decoration-2 underline-offset-2">Tech Stack</p>
+                  <ul className="flex gap-5 md:gap-x-7 pt-5 md:pt-0 items-center flex-wrap justify-center md:justify-start">
+                    <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
+                      <img className="w-8" src={HTML5} alt="HTML5" title="HTML5" />
+                    </li>
+                    <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
+                      <img className="w-8" src={CSS3} alt="CSS3" title="CSS3" />
+                    </li>
+                    <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
+                      <img className="w-8" src={JavaScript} alt="JavaScript" title="JavaScript" />
+                    </li>
+                    <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
+                      <img className="w-8" src={ReactIcon} alt="React" title="React" />
+                    </li>
+                    <li className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
+                      <img className="w-8" src={Csharp} alt="C#" title="C#" />
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="w-60 h-60 lg:w-80 lg:h-80 bg-about bg-cover bg-center border-4 border-purple-500 about-img"></div>
             </div>
