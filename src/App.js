@@ -33,7 +33,7 @@ function App() {
         <nav className='hidden md:flex gap-x-5 text-xl'>
           <a href="#about" className='hover:text-purple-700 transition duration-300'>About</a>
           <a href="#projects" className='hover:text-purple-700 transition duration-300'>Projects</a>
-          <a href="#contacts" className='hover:text-purple-700 transition duration-300'>Contact</a>
+          <a href="#contact" className='hover:text-purple-700 transition duration-300'>Contact</a>
         </nav>
         <div className='md:hidden flex justify-center cursor-pointer'>
           <img onClick={() => toggleMenu(true)} src={menu} alt="open menu" />
@@ -44,7 +44,7 @@ function App() {
             <div className='flex flex-col gap-y-8 text-2xl text-center'>
               <a href="#about" onClick={() => toggleMenu(false)} className='hover:text-purple-700'>About</a>
               <a href="#projects" onClick={() => toggleMenu(false)} className='hover:text-purple-700'>Projects</a>
-              <a href="#contacts" onClick={() => toggleMenu(false)} className='hover:text-purple-700'>Contact</a>
+              <a href="#contact" onClick={() => toggleMenu(false)} className='hover:text-purple-700'>Contact</a>
             </div>
           </div>
         </div>
@@ -86,8 +86,8 @@ function App() {
         </div>
 
         <div id="projects" className="bg-purple-50 w-full py-24 px-5">
-          <h2 className="text-2xl md:text-4xl font-bold text-center">Projects</h2>
-          <p className="text-lg md:text-xl p-5 text-center mb-10">Take a look at some of my work so far!</p>
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-3">Projects</h2>
+          <p className="text-lg md:text-xl mb-10 text-center">Take a look at some of my work so far!</p>
 
           <div className="gap-24 flex flex-col justify-center items-center">
             <div className="bg-white p-5 rounded-lg flex justify-center items-center flex-wrap md:flex-nowrap gap-5 shadow-lg">
@@ -95,8 +95,8 @@ function App() {
                 <img src={eCommerce} alt="" className="rounded-lg shadow-md" />
               </div>
               <div className="md:w-[300px] flex flex-col items-center text-center">
-                <h3 className="text-lg md:text-xl font-bold">Home & Fashion 👚</h3>
-                <p className="p-5">An e-commerce website featuring an updating shopping cart and individual product pages.</p>
+                <h3 className="text-xl md:text-2xl font-bold">Home & Fashion 👚</h3>
+                <p className="p-5 md:text-xl">An e-commerce website featuring an updating shopping cart and individual product pages.</p>
                 <p><span className="p-2 font-semibold shadow mr-2">React</span> <span className="p-2 font-semibold shadow">Tailwind</span></p>
                 <div className="mt-7 text-xl flex gap-5">
                   <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/ecommerce-shop">Code <i class="fa-brands fa-github fa-lg"></i></a>
@@ -107,8 +107,8 @@ function App() {
 
             <div className="bg-white p-5 rounded-lg flex justify-center items-center flex-wrap-reverse md:flex-nowrap gap-5 shadow-lg">
               <div className="md:w-[300px] flex flex-col items-center text-center">
-                <h3 className="text-lg md:text-xl font-bold">🦁 Durham Zoo</h3>
-                <p className="p-5">A homepage for a zoo with a gallery, amenities, and ticket information.</p>
+                <h3 className="text-xl md:text-2xl font-bold">🦁 Durham Zoo</h3>
+                <p className="p-5 md:text-xl">A homepage for a zoo with a gallery, amenities, and ticket information.</p>
                 <p><span className="p-2 font-semibold shadow mr-2">CSS</span> <span className="p-2 font-semibold shadow">JavaScript</span></p>
                 <div className="mt-7 text-xl flex gap-5">
                   <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/zoo-site">Code <i class="fa-brands fa-github fa-lg"></i></a>
@@ -125,8 +125,8 @@ function App() {
                 <img src={BookPage} alt="" className="rounded-lg shadow-md" />
               </div>
               <div className="md:w-[300px] flex flex-col items-center text-center">
-                <h3 className="text-lg md:text-xl font-bold">Warriors: Shadow 🐱</h3>
-                <p className="p-5">A simple, sleek page advertising an installment in the Warriors series.</p>
+                <h3 className="text-xl md:text-2xl font-bold">Warriors: Shadow 🐱</h3>
+                <p className="p-5 md:text-xl">A simple, sleek page advertising an installment in the Warriors series.</p>
                 <p><span className="p-2 font-semibold shadow mr-2">Bootstrap</span> <span className="p-2 font-semibold shadow">JavaScript</span></p>
                 <div className="mt-7 text-xl flex gap-5">
                   <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/book-page">Code <i class="fa-brands fa-github fa-lg"></i></a>
@@ -137,8 +137,8 @@ function App() {
 
             <div className="bg-white p-5 rounded-lg flex justify-center items-center flex-wrap-reverse md:flex-nowrap gap-5 shadow-lg">
               <div className="md:w-[300px] flex flex-col items-center text-center">
-                <h3 className="text-lg md:text-xl font-bold">🏠 Clover Realty</h3>
-                <p className="p-5">A real estate company website with property listings and a contact form.</p>
+                <h3 className="text-xl md:text-2xl font-bold">🏠 Clover Realty</h3>
+                <p className="p-5 md:text-xl">A real estate company website with property listings and a contact form.</p>
                 <p><span className="p-2 font-semibold shadow">CSS</span></p>
                 <div className="mt-7 text-xl flex gap-5">
                   <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/realtor-project">Code <i class="fa-brands fa-github fa-lg"></i></a>
@@ -153,8 +153,25 @@ function App() {
           </div>
         </div>
 
-        <div id="contact">
-          <h2>Contact</h2>
+        <div id="contact" className="w-full py-24 px-5">
+          <h2 className="text-2xl md:text-4xl font-bold text-center">Contact</h2>
+          <p className="text-lg md:text-xl p-5 text-center mb-5">Feel free to get in touch!</p>
+          <div className="flex justify-center items-center gap-16">
+            <div className="flex items-center gap-3 text-xl">
+              <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
+                <i class="fa-solid fa-map-location-dot fa-xl"></i>
+              </div>
+              <p>Scarborough, ON</p>
+            </div>
+            <div>
+              <div className="flex items-center gap-3 text-xl">
+                <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full">
+                  <i class="fa-solid fa-envelope fa-xl"></i>
+                </div>
+                <p>zoegawlak@gmail.com</p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </main >
