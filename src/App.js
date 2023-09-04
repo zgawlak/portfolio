@@ -1,13 +1,23 @@
 import './App.css';
 import React, { useState } from 'react';
+
+// icons
 import menu from './assets/icons/menu.svg';
 import close from './assets/icons/x.svg';
+
+// tech icons
 import HTML5 from './assets/icons/html5.svg';
 import CSS3 from './assets/icons/css3.svg';
 import JavaScript from './assets/icons/javascript.svg';
 import Csharp from './assets/icons/c-sharp.svg';
 import ReactIcon from './assets/icons/React-icon.svg';
-import Tailwind from './assets/icons/tailwind.svg';
+
+// screenshots
+import eCommerce from './assets/img/ecommerce.png';
+import ZooSite from './assets/img/zoo-site.png';
+import BookPage from './assets/img/book-page.png';
+import RealtorProject from './assets/img/realtor-project.png';
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +52,7 @@ function App() {
       </header>
 
       <main>
+
         <div className="pt-32 pb-5 bg-gray-50 md:py-0">
           <div id="about" className="text-primary w-full flex flex-col h-auto md:h-screen justify-center">
             <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-5 lg:gap-24">
@@ -74,17 +85,85 @@ function App() {
           </div>
         </div>
 
-        <div id="projects">
-          <h2>Projects</h2>
+        <div id="projects" className="bg-purple-50 w-full py-24 px-5">
+          <h2 className="text-2xl md:text-4xl font-bold text-center">Projects</h2>
+          <p className="text-lg md:text-xl p-5 text-center mb-10">Take a look at some of my work so far!</p>
+
+          <div className="gap-24 flex flex-col justify-center items-center">
+            <div className="bg-white p-5 rounded-lg flex justify-center items-center flex-wrap md:flex-nowrap gap-5 shadow-lg">
+              <div className="md:w-[500px]">
+                <img src={eCommerce} alt="" className="rounded-lg shadow-md" />
+              </div>
+              <div className="md:w-[300px] flex flex-col items-center text-center">
+                <h3 className="text-lg md:text-xl font-bold">Home & Fashion 👚</h3>
+                <p className="p-5">An e-commerce website featuring an updating shopping cart and individual product pages.</p>
+                <p><span className="p-2 font-semibold shadow mr-2">React</span> <span className="p-2 font-semibold shadow">Tailwind</span></p>
+                <div className="mt-7 text-xl flex gap-5">
+                  <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/ecommerce-shop">Code <i class="fa-brands fa-github fa-lg"></i></a>
+                  <a target="_blank" rel="noreferrer" href="https://zgawlak-ecommerce.vercel.app/">Demo <i class="fa-solid fa-up-right-from-square fa-md"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-5 rounded-lg flex justify-center items-center flex-wrap-reverse md:flex-nowrap gap-5 shadow-lg">
+              <div className="md:w-[300px] flex flex-col items-center text-center">
+                <h3 className="text-lg md:text-xl font-bold">🦁 Durham Zoo</h3>
+                <p className="p-5">A homepage for a zoo with a gallery, amenities, and ticket information.</p>
+                <p><span className="p-2 font-semibold shadow mr-2">CSS</span> <span className="p-2 font-semibold shadow">JavaScript</span></p>
+                <div className="mt-7 text-xl flex gap-5">
+                  <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/zoo-site">Code <i class="fa-brands fa-github fa-lg"></i></a>
+                  <a target="_blank" rel="noreferrer" href="https://zgawlak.github.io/zoo-site/">Demo <i class="fa-solid fa-up-right-from-square fa-md"></i></a>
+                </div>
+              </div>
+              <div className="md:w-[500px]">
+                <img src={ZooSite} alt="" className="rounded-lg shadow-md" />
+              </div>
+            </div>
+
+            <div className="bg-white p-5 rounded-lg flex justify-center items-center flex-wrap md:flex-nowrap gap-5 shadow-lg">
+              <div className="md:w-[500px]">
+                <img src={BookPage} alt="" className="rounded-lg shadow-md" />
+              </div>
+              <div className="md:w-[300px] flex flex-col items-center text-center">
+                <h3 className="text-lg md:text-xl font-bold">Warriors: Shadow 🐱</h3>
+                <p className="p-5">A simple, sleek page advertising an installment in the Warriors series.</p>
+                <p><span className="p-2 font-semibold shadow mr-2">Bootstrap</span> <span className="p-2 font-semibold shadow">JavaScript</span></p>
+                <div className="mt-7 text-xl flex gap-5">
+                  <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/book-page">Code <i class="fa-brands fa-github fa-lg"></i></a>
+                  <a target="_blank" rel="noreferrer" href="https://zgawlak.github.io/book-page/">Demo <i class="fa-solid fa-up-right-from-square fa-md"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-5 rounded-lg flex justify-center items-center flex-wrap-reverse md:flex-nowrap gap-5 shadow-lg">
+              <div className="md:w-[300px] flex flex-col items-center text-center">
+                <h3 className="text-lg md:text-xl font-bold">🏠 Clover Realty</h3>
+                <p className="p-5">A real estate company website with property listings and a contact form.</p>
+                <p><span className="p-2 font-semibold shadow">CSS</span></p>
+                <div className="mt-7 text-xl flex gap-5">
+                  <a target="_blank" rel="noreferrer" href="https://github.com/zgawlak/realtor-project">Code <i class="fa-brands fa-github fa-lg"></i></a>
+                  <a target="_blank" rel="noreferrer" href="https://zgawlak.github.io/realtor-project/">Demo <i class="fa-solid fa-up-right-from-square fa-md"></i></a>
+                </div>
+              </div>
+              <div className="md:w-[500px]">
+                <img src={RealtorProject} alt="" className="rounded-lg shadow-md" />
+              </div>
+            </div>
+
+          </div>
         </div>
+
         <div id="contact">
           <h2>Contact</h2>
         </div>
-      </main>
+
+      </main >
+
       <footer>
         <h2>Footer</h2>
       </footer>
-    </div>
+
+    </div >
   );
 }
 
