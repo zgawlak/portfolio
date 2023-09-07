@@ -169,7 +169,7 @@ function App() {
                 <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full shadow-md">
                   <i class="fa-solid fa-envelope fa-lg"></i>
                 </div>
-                <a href="mailto:zoegawlak@gmail.com">zoegawlak@gmail.com</a>  
+                <a href="mailto:zgawlak@my.centennialcollege.ca">zgawlak@my.centennialcollege.ca</a>
               </div>
             </div>
           </div>
