@@ -23,7 +23,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = (x) => {
     setIsOpen(x);
-  }
+  };
 
   return (
     <div>
@@ -80,7 +80,7 @@ function App() {
                   </ul>
                 </div>
               </div>
-              <div className="w-60 h-60 lg:w-80 lg:h-80 bg-about bg-cover bg-center border-4 border-purple-500 about-img"></div>
+              <div className="w-60 h-60 lg:w-80 lg:h-80 bg-about about-img rounded-custom bg-cover bg-center border-2 border-gray-300 animate-profile_animate"></div>
             </div>
           </div>
         </div>

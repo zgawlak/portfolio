@@ -16,7 +16,6 @@ code {
 
 .about-img {
   background-position: 0 10%;
-  animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
 @keyframes profile_animate {
