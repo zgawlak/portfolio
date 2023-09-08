@@ -162,7 +162,7 @@ function App() {
               <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full shadow-md">
                 <i class="fa-solid fa-map-location-dot fa-lg"></i>
               </div>
-              <p className="basis-full md:basis-auto text-center">Scarborough, ON</p>
+              <p className="basis-full md:basis-auto text-center">Toronto, ON</p>
             </div>
             <div>
               <div className="flex justify-center items-center gap-3 text-lg md:text-xl flex-wrap">
