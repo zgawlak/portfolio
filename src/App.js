@@ -157,19 +157,19 @@ function App() {
           <h2 className="text-2xl md:text-4xl font-bold">Contact</h2>
           <p className="text-lg md:text-xl p-3 mb-5">Feel free to get in touch!</p>
 
-          <div className="flex md:justify-center items-center gap-5 md:gap-16 flex-wrap">
-            <div className="flex items-center gap-3 text-lg md:text-xl">
+          <div className="flex justify-center items-center gap-5 md:gap-16 flex-wrap">
+            <div className="flex justify-center items-center gap-3 text-lg md:text-xl flex-wrap">
               <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full shadow-md">
                 <i class="fa-solid fa-map-location-dot fa-lg"></i>
               </div>
-              <p>Scarborough, ON</p>
+              <p className="basis-full md:basis-auto text-center">Scarborough, ON</p>
             </div>
             <div>
-              <div className="flex items-center gap-3 text-lg md:text-xl">
+              <div className="flex justify-center items-center gap-3 text-lg md:text-xl flex-wrap">
                 <div className="bg-purple-100 flex justify-center items-center w-16 h-16 rounded-full shadow-md">
                   <i class="fa-solid fa-envelope fa-lg"></i>
                 </div>
-                <a href="mailto:zgawlak@my.centennialcollege.ca">zgawlak@my.centennialcollege.ca</a>
+                <a className="basis-full md:basis-auto text-center" href="mailto:zgawlak@my.centennialcollege.ca">zgawlak@my.centennialcollege.ca</a>
               </div>
             </div>
           </div>
