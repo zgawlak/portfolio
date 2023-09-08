@@ -53,8 +53,8 @@ function App() {
 
       <main>
 
-        <div className="pt-32 pb-5 bg-gray-50 md:py-0">
-          <div id="about" className="text-primary w-full flex flex-col h-auto md:h-screen justify-center">
+        <section id="about" className="pt-32 pb-5 bg-gray-50 md:py-0">
+          <div className="text-primary w-full flex flex-col h-auto md:h-screen justify-center">
             <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-5 lg:gap-24">
               <div className="text-center md:text-left md:max-w-xl p-5">
                 <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
@@ -83,9 +83,9 @@ function App() {
               <div className="w-60 h-60 lg:w-80 lg:h-80 bg-about about-img rounded-custom bg-cover bg-center border-2 border-gray-300 animate-profile_animate"></div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div id="projects" className="bg-purple-50 w-full py-24 px-5">
+        <section id="projects" className="bg-purple-50 w-full py-24 px-5">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-3">Projects</h2>
           <p className="text-lg md:text-xl mb-10 text-center">Take a look at some of my work so far!</p>
 
@@ -151,9 +151,9 @@ function App() {
             </div>
 
           </div>
-        </div>
+        </section>
 
-        <div id="contact" className="w-full py-24 px-5 flex flex-col items-center bg-gray-50">
+        <section id="contact" className="w-full py-24 px-5 flex flex-col items-center bg-gray-50">
           <h2 className="text-2xl md:text-4xl font-bold">Contact</h2>
           <p className="text-lg md:text-xl p-3 mb-5">Feel free to get in touch!</p>
 
@@ -173,7 +173,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
       </main >
     </div >
