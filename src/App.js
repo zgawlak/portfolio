@@ -80,7 +80,7 @@ function App() {
                   </ul>
                 </div>
               </div>
-              <div className="w-60 h-60 lg:w-80 lg:h-80 bg-about about-img rounded-custom bg-cover bg-center border-2 border-gray-300 animate-profile_animate"></div>
+              <div className="w-60 h-60 lg:w-80 lg:h-80 bg-about about-img rounded-custom bg-cover bg-center shadow-lg animate-profile_animate"></div>
             </div>
           </div>
         </section>
