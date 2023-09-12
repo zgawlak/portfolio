@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+import { Link } from "react-scroll";
 
 // icons
 import menu from './assets/icons/menu.svg';
@@ -31,9 +32,9 @@ function App() {
 
         <h1 className='font-bold text-2xl'>zgawlak</h1>
         <nav className='hidden md:flex gap-x-5 text-xl'>
-          <a href="#about" className='hover:text-purple-700 transition duration-300'>About</a>
-          <a href="#projects" className='hover:text-purple-700 transition duration-300'>Projects</a>
-          <a href="#contact" className='hover:text-purple-700 transition duration-300'>Contact</a>
+          <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className='hover:text-purple-700 hover:cursor-pointer transition duration-300'>About</Link>
+          <Link to="projects" spy={true} smooth={true} offset={-70} duration={500} className='hover:text-purple-700 hover:cursor-pointer transition duration-300'>Projects</Link>
+          <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className='hover:text-purple-700 hover:cursor-pointer transition duration-300'>Contact</Link>
         </nav>
         <div className='md:hidden flex justify-center cursor-pointer'>
           <img onClick={() => toggleMenu(true)} src={menu} alt="open menu" />
@@ -42,9 +43,9 @@ function App() {
           <img onClick={() => toggleMenu(false)} src={close} className='cursor-pointer absolute top-8 right-8 w-8' alt="close menu" />
           <div className='flex justify-center items-center p-5 h-full'>
             <div className='flex flex-col gap-y-8 text-2xl text-center'>
-              <a href="#about" onClick={() => toggleMenu(false)} className='hover:text-purple-700'>About</a>
-              <a href="#projects" onClick={() => toggleMenu(false)} className='hover:text-purple-700'>Projects</a>
-              <a href="#contact" onClick={() => toggleMenu(false)} className='hover:text-purple-700'>Contact</a>
+              <Link to="about" spy={true} smooth={true} offset={-70} duration={500} onClick={() => toggleMenu(false)} className='hover:text-purple-700 hover:cursor-pointer'>About</Link>
+              <Link to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={() => toggleMenu(false)} className='hover:text-purple-700 hover:cursor-pointer'>Projects</Link>
+              <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} onClick={() => toggleMenu(false)} className='hover:text-purple-700 hover:cursor-pointer'>Contact</Link>
             </div>
           </div>
         </div>
